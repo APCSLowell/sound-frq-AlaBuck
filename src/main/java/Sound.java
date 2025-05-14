@@ -29,6 +29,7 @@ public class Sound
         i++;
       }
       return changed;
+    }
   }
 
 
@@ -50,4 +51,5 @@ public class Sound
       newSamples[j] = samples[i+j];
     }
     samples = newSamples;
+    }
 }
