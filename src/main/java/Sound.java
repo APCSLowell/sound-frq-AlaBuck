@@ -17,19 +17,16 @@ public class Sound
   {  
     /* to be implemented in part (a) */
     int changed = 0;
-    int i = 0;
-    while(i<samples.length){
-      if(samples[i]>limit){
-        samples[i] = limit;
-        changed++;
-      } else if(samples[i]<(-1*limit)){
-        samples[i] = -1*limit;
-        changed++;
-      } else {
-        i++;
-      }
-      return changed;
+    for(int i=0; i<samples.length; i++){
+        if(samples[i] > limit){
+          samples[i] = limit;
+          changed++;
+        } else if(samples[i] < -limit){
+          samples[i] = -limit;
+          changed++;
+        }
     }
+    return count;
   }
 
 
