@@ -26,7 +26,7 @@ public class Sound
           changed++;
         }
     }
-    return count;
+    return changed;
   }
 
 
